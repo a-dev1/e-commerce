@@ -13,7 +13,7 @@ class Directory extends React.Component {
                     title: 'hats',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 1,
-                    linkUrl: '/hats'
+                    linkUrl: 'hats'
                 },
                 {
                     title: 'jackets',
@@ -49,8 +49,9 @@ class Directory extends React.Component {
         return (
             <div className="directory-menu">
                 {
-                    this.state.sections.map(({ title, imageUrl, size, id, linkUrl }) => {
-                        return <MenuItem title={title} key={id} size={size} imageUrl={imageUrl} linkUrl={linkUrl}
+                    this.state.sections.map(({ id, ...restProps }) => {
+                        {/* First destructuring and then using spread syntax */ }
+                        return <MenuItem key={id} {...restProps}
                         />
                     })
                 }

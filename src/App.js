@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import './App.css';
 
 const HatsPage = (props) => {
-  console.log(props)
+  console.log('props from hatpage:', props)
   return(
     <div>
       <h1>HATS {props.match.params.message}</h1>

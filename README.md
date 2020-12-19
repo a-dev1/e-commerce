@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+I am making a full fleged e-commerece clothing website where we can add items to the cart, remove items and all can do the payments for which I am gonna use a stripe API.
+
+This site is under construction..... &nbsp;  very soon I am gonna apply gh-pages on this repo

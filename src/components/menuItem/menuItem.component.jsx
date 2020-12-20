@@ -15,4 +15,4 @@ const MenuItem = ({ title, imageUrl, size, linkUrl, history, match }) => (
     </div >
 )
 
-export default withRouter(MenuItem); //Will return us a super power menu-item component with access to those location, match and history props which we need access to
+export default withRouter(MenuItem); //Will return us a super power menu-item component with access to that location prop, match and history props which we need access to

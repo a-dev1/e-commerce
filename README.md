@@ -11,7 +11,6 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `e-commerce`
-I am making a full fleged e-commerece clothing website where we can add items to the cart, remove items and all can do the payments for which I am gonna use a stripe API.
+I am making a full fleged e-commerece clothing website where we can add items to the cart, remove items and all can buy products by doing payments for which I am gonna use a stripe API. 
 
-This site is under construction.....  
-very soon I am gonna apply gh-pages on this repo
+`This site is under construction.....`

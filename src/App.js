@@ -27,9 +27,20 @@ class App extends React.Component {
     }
   }
 
+  unsubscribeFromAuth = null
+
   componentDidMount() {
     //generally fetch data here
-    
+    //Whenever sign in or out we want to be aware without actually manually fetch & firebase give us this functionality
+    //it is an open subscription which get automatically updated when user sign in or out with any of the services.
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+      this.setState({currentUser: user})
+      console.log(user)
+    })
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
   }
 
   render(){
@@ -40,7 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/shop" component={ShopPage}/>        
-          <Route path="/hats/:message" component={HatsPage}/>
+          {/* <Route path="/hats/:message" component={HatsPage}/> */}
           <Route exact path="/signin" component={SignInAndUp} />
         </Switch>
       </div>

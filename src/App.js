@@ -47,7 +47,7 @@ class App extends React.Component {
     return (
       <div>
         {/** When a route path matches inside switch it doesn't render further */}
-        <Header/>
+        <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/shop" component={ShopPage}/>        

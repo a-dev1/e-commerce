@@ -24,3 +24,12 @@ class CollectionPreview extends Component {
 }
 
 export default CollectionPreview;
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 import firebase from 'firebase/app'; //firebase has all of the utility libraries but we don't want any which we are not using;
-import 'firebase/firestore';
+import 'firebase/firestore'; //Run the modules{firestore} global code, but doesn't actually import any values.
 import 'firebase/auth';
 
 const config = {

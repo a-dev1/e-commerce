@@ -33,6 +33,8 @@ class App extends React.Component {
     //generally fetch data here
     //Whenever sign in or out we want to be aware without actually manually fetch & firebase give us this functionality
     //it is an open subscription which get automatically updated when user sign in or out with any of the services.
+    //onAuthStateChange(userState => { //something important})
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.setState({currentUser: user})
       console.log(user)
@@ -43,7 +45,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth();
   }
 
-  render(){
+  render(){  
     return (
       <div>
         {/** When a route path matches inside switch it doesn't render further */}
